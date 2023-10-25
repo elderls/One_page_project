@@ -1,0 +1,138 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+p , a {
+    color: white;
+    text-align-last: center;
+    margin: 8px;
+    text-decoration:none;
+
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+/* Vídeo de fundo */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+    filter: brightness(0.5);
+}
+
+
+
+#coluna {
+    background-color: rgba(129, 47, 95, 0.8); 
+    z-index: 2;
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    height: auto;
+    left: 23%;
+    border-radius: 5px;
+    padding-bottom: 10%;
+    
+}
+
+/* Estilos para a imagem com id "foto" */
+#foto-container{
+    position: relative;
+    z-index: 3;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+#foto {
+    border-radius: 50%;
+    top: 15%;
+}
+/*
+#foto-overlay {
+    position: absolute;
+    display: flex;
+    height: 38%;
+    width: 60%;
+    bottom: 0%;
+    border-radius: 2%;
+    background-image: linear-gradient(to top, #833271, #f1f1f100);
+    z-index: 1;  Elevar o #foto-overlay para que fique abaixo do #descricao-foto 
+}
+*/
+#descricao-foto {
+    position: absolute; /* Altere de relative para absolute */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #ffc0cb00;
+    width: 100%; /* Preencher toda a largura do #foto-overlay */
+    bottom: 0; /* Colocar na parte inferior do #foto-overlay */
+    z-index: 2; /* Elevar o #descricao-foto para que fique sobre o #foto-overlay */
+}
+
+#contato li {
+        border-radius: 36px;
+        background-color: rgba(199, 67, 117, 0.79);
+        color: rgb(255, 255, 255);
+        text-transform: none;
+        box-shadow: none;
+        min-height: 65px;
+        margin: 16px 0px;
+        border: 2px solid rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 70%;
+        left:  15%;
+
+}
+
+li:hover {
+    background-color: white;
+}
+
+
+#procedimento {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}    
+
+
+
+#procedimento > div{  
+    flex: 1 1 250px;
+    margin: 15px;
+}    
+
