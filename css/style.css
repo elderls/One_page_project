@@ -73,6 +73,8 @@ img {
 
 #foto {
     border-radius: 50%;
+    width: 50%;
+    height: 100%;
     top: 15%;
 }
 /*
@@ -86,9 +88,10 @@ img {
     background-image: linear-gradient(to top, #833271, #f1f1f100);
     z-index: 1;  Elevar o #foto-overlay para que fique abaixo do #descricao-foto 
 }
+
 */
 #descricao-foto {
-    position: absolute; /* Altere de relative para absolute */
+    position: static; /* Altere de relative para absolute */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,14 +128,27 @@ li:hover {
 #procedimento {
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
+    border-radius: 55px;
+
 }    
 
 
 
-#procedimento > div{  
+#procedimento > div{
+    position: relative;  
     flex: 1 1 250px;
-    margin: 15px;
+    margin: 35px;
+
 }    
+
+#procedimento > div:hover {  
+    scale: 1.2;
+    
+}  
+
+#box {
+    border-radius: 35px;
+}
 
